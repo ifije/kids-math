@@ -345,7 +345,10 @@
   function viewQuiz() {
     const z = state.quiz, q = currentQ(), total = z.questions.length;
     const long = q.q.length > 24 || q.q.includes('\n');
-    const qText = esc(q.q).replace(/\b([xyzmnw])\b/g, '<span class="var">$1</span>');
+    const italic = s => esc(s).replace(/\b([xyzmnw])\b/g, '<span class="var">$1</span>');
+    const lines = q.q.split('\n');
+    const qText = '<div class="qt">' + lines.map((ln, i) =>
+      `<div class="${i === 0 && lines.length > 1 && /:\s*$/.test(ln) ? 'lead' : 'line'}">${italic(ln)}</div>`).join('') + '</div>';
     const hasHint = !!q.hint;
     return `
       <div class="screen quiz">
@@ -392,7 +395,7 @@
     const q = currentQ(); if (!q.hint) return;
     state.quiz.hintShown = true;
     const fb = document.getElementById('feedback');
-    fb.className = 'feedback'; fb.innerHTML = `<span class="muted">${esc(q.hint)}</span>`;
+    fb.className = 'feedback'; fb.innerHTML = `<div class="muted">${esc(q.hint)}</div>`;
   }
 
   function submit() {
@@ -404,14 +407,14 @@
     if (ok) {
       z.correct++; z.streak++; z.bestStreak = Math.max(z.bestStreak, z.streak);
       ans.className = 'answer good'; fb.className = 'feedback good';
-      fb.textContent = pick(['Correct!', 'Yes!', 'Nice!', 'Got it!', 'Right!']);
+      fb.innerHTML = `<div>${pick(['Correct!', 'Yes!', 'Nice!', 'Got it!', 'Right!'])}</div>`;
       z.phase = 'locked';
       setTimeout(nextQuestion, 550);
     } else {
       z.streak = 0;
       z.misses.push({ q, given: z.input });
       ans.className = 'answer bad'; fb.className = 'feedback bad';
-      fb.innerHTML = `Not quite. The answer is <b>${esc(fmtNum(q.a))}</b>.` + (q.explain ? `<span class="explain">${esc(q.explain)}</span>` : '');
+      fb.innerHTML = `<div>Not quite. The answer is <b>${esc(fmtNum(q.a))}</b>.` + (q.explain ? `<span class="explain">${esc(q.explain)}</span>` : '') + '</div>';
       z.phase = 'wrong';
       const btn = document.getElementById('check'); btn.textContent = 'Next'; btn.classList.add('next');
     }

@@ -152,6 +152,9 @@ button:active { transform: translateY(1px); }
   font-variant-numeric: tabular-nums;
 }
 .question.long { font-size: 26px; font-weight: 600; line-height: 1.35; }
+.question .qt { display: flex; flex-direction: column; gap: 6px; align-items: center; }
+.question .lead { font-size: 18px; font-weight: 600; color: var(--muted); }
+.question.long .line:not(:first-child), .question.long .lead + .line { font-size: 40px; font-weight: 700; }
 .question .var { font-family: Georgia, "Times New Roman", serif; font-style: italic; font-weight: 600; }
 
 .answer {
