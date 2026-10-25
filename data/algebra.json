@@ -64,7 +64,7 @@
       "id": "a-word",
       "name": "Word problems",
       "description": "Hand-written. Edit data/algebra.json to add more.",
-      "count": 6,
+      "count": 8,
       "questions": [
         {
           "q": "A number plus 9 is 23. What is the number?",
@@ -111,7 +111,43 @@
           "a": 16,
           "hint": "x/2 + 7 = 15",
           "explain": "x/2 = 8, so x = 16."
-        }
+        },
+        { "q": "A number doubled, plus 6, is 20. What is the number?", "a": 7, "hint": "2x + 6 = 20", "explain": "2x = 14, so x = 7." },
+        { "q": "Pens cost $3 each. Ava bought some pens and a $5 notebook and spent $26. How many pens did she buy?", "a": 7, "hint": "3p + 5 = 26", "explain": "3p = 21, so p = 7." },
+        { "q": "Three whole numbers in a row add up to 48. What is the smallest?", "a": 15, "hint": "Call them x, x + 1 and x + 2.", "explain": "3x + 3 = 48, so x = 15." },
+        { "q": "A rectangle is 3 longer than it is wide. Its perimeter is 34. How wide is it?", "a": 7, "hint": "Width x, length x + 3. Perimeter = 2(x + x + 3).", "explain": "4x + 6 = 34, so x = 7." },
+        { "q": "Leo is 5 years younger than Mia. Together they are 27. How old is Leo?", "a": 11, "hint": "Let Leo be x. Then Mia is x + 5.", "explain": "2x + 5 = 27, so x = 11." },
+        { "q": "A number is divided by 5, then 3 is added. The result is 11. What is the number?", "a": 40, "hint": "x/5 + 3 = 11", "explain": "x/5 = 8, so x = 40." },
+        { "q": "Three times the sum of a number and 4 is 36. What is the number?", "a": 8, "hint": "3(x + 4) = 36", "explain": "x + 4 = 12, so x = 8." },
+        { "q": "A gym charges $20 to join plus $15 per month. After how many months have you paid $140 in all?", "a": 8, "hint": "20 + 15k = 140", "explain": "15k = 120, so k = 8." },
+        { "q": "I think of a number, multiply it by 4, subtract 9, and get 31. What is my number?", "a": 10, "hint": "4x − 9 = 31", "explain": "4x = 40, so x = 10." },
+        { "q": "The sum of a number and twice that number is 45. What is the number?", "a": 15, "hint": "x + 2x = 45", "explain": "3x = 45, so x = 15." },
+        { "q": "A bus has 12 more adults than children. There are 52 passengers in all. How many children?", "a": 20, "hint": "Let the children be x. Then adults are x + 12.", "explain": "2x + 12 = 52, so x = 20." },
+        { "q": "Tickets cost $8 for adults and $5 for children. A family bought 2 adult tickets and some child tickets for $31 in all. How many child tickets?", "a": 3, "hint": "2 × 8 + 5c = 31", "explain": "16 + 5c = 31, so c = 3." }
+      ]
+    },
+    {
+      "id": "a-word-hard",
+      "name": "Harder word problems",
+      "description": "Ages, digits, coins and rates",
+      "count": 8,
+      "questions": [
+        { "q": "A father is four times as old as his son. In 6 years, their ages added together will be 67. How old is the son now?", "a": 11, "hint": "Son x, father 4x. In 6 years: x + 6 and 4x + 6.", "explain": "5x + 12 = 67, so x = 11." },
+        { "q": "Two numbers add to 50. One is 14 more than the other. What is the larger number?", "a": 32, "hint": "Call the smaller one x.", "explain": "2x + 14 = 50, so x = 18 and the larger is 32." },
+        { "q": "A two-digit number has digits that add to 11. Reversing the digits makes it 27 bigger. What is the number?", "a": 47, "hint": "Try the tens digit a and ones digit b: a + b = 11.", "explain": "The number is 47. Reversed it is 74." },
+        { "q": "Tom has twice as many coins as Sue. If Tom gives Sue 10 coins, they have the same number. How many coins does Tom have?", "a": 40, "hint": "Sue has x, Tom has 2x. Then 2x − 10 = x + 10.", "explain": "x = 20, so Tom has 40." },
+        { "q": "Five whole numbers in a row add up to 85. What is the largest?", "a": 19, "hint": "Call the middle number m: the five are m − 2 to m + 2.", "explain": "The middle one is 17, so the largest is 19." },
+        { "q": "Ben has 24 coins, all nickels (5 cents) and dimes (10 cents), worth $1.70 in all. How many dimes does he have?", "a": 10, "hint": "Let the dimes be d. Then nickels are 24 − d.", "explain": "5(24 − d) + 10d = 170, so 120 + 5d = 170 and d = 10." },
+        { "q": "A farm has only chickens and rabbits. They have 20 heads and 56 legs in all. How many rabbits?", "a": 8, "hint": "Let the rabbits be r. Chickens are 20 − r.", "explain": "40 + 2r = 56, so r = 8." },
+        { "q": "Sam is 3 times as old as Dee. In 5 years Sam will be twice as old as Dee. How old is Dee now?", "a": 5, "hint": "Dee x, Sam 3x. In 5 years: x + 5 and 3x + 5.", "explain": "3x + 5 = 2x + 10, so x = 5." },
+        { "q": "Triple a number, minus 7, equals double the number plus 5. What is the number?", "a": 12, "hint": "3x − 7 = 2x + 5", "explain": "x = 12." },
+        { "q": "The length of a rectangle is twice its width. Its perimeter is 48. What is its area?", "a": 128, "hint": "Width x, length 2x.", "explain": "Width 8, length 16, area 8 × 16 = 128." },
+        { "q": "Sara spends half her money on a book, then $6 on lunch, and has $9 left. How much money did she start with?", "a": 30, "hint": "Work backward from $9.", "explain": "Before lunch she had 15, which is half her money. She started with 30." },
+        { "q": "When 7 is subtracted from three times a number, the result is the same as when the number is added to 11. What is the number?", "a": 9, "hint": "3x − 7 = x + 11", "explain": "2x = 18, so x = 9." },
+        { "q": "A tank is 1/3 full. After 20 more liters go in it is 5/6 full. How many liters does the full tank hold?", "a": 40, "hint": "The 20 liters fill 5/6 − 1/3 of the tank.", "explain": "5/6 − 1/3 = 1/2, so the tank holds 40 liters." },
+        { "q": "Train A goes 60 km per hour. Train B goes 80 km per hour on the same track and leaves the station 1 hour later. How many hours after B leaves does it catch A?", "a": 3, "hint": "They are at the same distance when 60(t + 1) = 80t.", "explain": "60t + 60 = 80t, so t = 3." },
+        { "q": "Maya has $50 and saves $8 each week. Leo has $98 and spends $4 each week. After how many weeks do they have the same amount?", "a": 4, "hint": "50 + 8k = 98 − 4k", "explain": "12k = 48, so k = 4." },
+        { "q": "Three even numbers in a row add up to 78. What is the largest?", "a": 28, "hint": "Call them x, x + 2 and x + 4.", "explain": "3x + 6 = 78, so x = 24 and the largest is 28." }
       ]
     }
   ]

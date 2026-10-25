@@ -3,7 +3,7 @@
 (() => {
   'use strict';
 
-  const SUBJECT_FILES = ['data/multiplication.json', 'data/algebra.json'];
+  const SUBJECT_FILES = ['data/multiplication.json', 'data/algebra.json', 'data/assessment.json', 'data/advanced.json'];
   const STORE_KEY = 'kidsmath.v1';
   const MINUS = '\u2212';
 

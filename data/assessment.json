@@ -1,0 +1,93 @@
+{
+  "subject": "Assessment",
+  "icon": "?",
+  "color": "blue",
+  "levels": [
+    {
+      "id": "as-fractions",
+      "name": "A. Numbers and fractions",
+      "description": "Fractions and decimals · no calculator",
+      "count": 8,
+      "questions": [
+        { "q": "3/4 + 5/6\n(answer as a fraction)", "a": "19/12", "explain": "3/4 = 9/12 and 5/6 = 10/12, so the sum is 19/12." },
+        { "q": "2½ × 1⅗", "a": 4, "explain": "5/2 × 8/5 = 40/10 = 4." },
+        { "q": "5/6 ÷ 2/9\n(answer as a fraction)", "a": "15/4", "explain": "Flip and multiply: 5/6 × 9/2 = 45/12 = 15/4." },
+        { "q": "4⅓ − 1⅚\n(answer as a fraction)", "a": "5/2", "explain": "13/3 − 11/6 = 26/6 − 11/6 = 15/6 = 5/2." },
+        { "q": "(17/23) × (46/51)\n(look for a shortcut first)", "a": "2/3", "explain": "46 = 2 × 23 and 51 = 3 × 17. Cancel to get 2/3." },
+        { "q": "0.6 × 0.35", "a": 0.21, "explain": "6 × 35 = 210 with three decimal places: 0.210 = 0.21." },
+        { "q": "7.2 ÷ 0.06", "a": 120, "explain": "Multiply both numbers by 100: 720 ÷ 6 = 120." },
+        { "q": "Write 3/8 as a decimal.", "a": 0.375, "explain": "3 ÷ 8 = 0.375." }
+      ]
+    },
+    {
+      "id": "as-equations",
+      "name": "B. Equations",
+      "description": "Solving for x and word problems",
+      "count": 6,
+      "questions": [
+        { "q": "Solve for x:\nx/4 = 12", "a": 48, "explain": "x = 12 × 4 = 48." },
+        { "q": "Solve for x:\n3x + 5 = 26", "a": 7, "explain": "3x = 21, so x = 7." },
+        { "q": "Solve for x:\n5x − 12 = 3x + 10", "a": 11, "explain": "2x − 12 = 10, so 2x = 22 and x = 11." },
+        { "q": "Solve for x:\n7x − 14 = 3x + 26", "a": 10, "explain": "4x − 14 = 26, so 4x = 40 and x = 10." },
+        { "q": "A father is four times as old as his son. In 6 years, their ages added together will be 67. How old is the son now?", "a": 11, "explain": "Son s, father 4s. (s + 6) + (4s + 6) = 67, so 5s = 55 and s = 11." },
+        { "q": "x can be any number.\nHow much bigger is 3(x + 4) than 3x + 4?", "a": 8, "explain": "3(x + 4) = 3x + 12, which is 8 more than 3x + 4." }
+      ]
+    },
+    {
+      "id": "as-ratio",
+      "name": "C. Ratio, percent and rate",
+      "description": "Ratios, percents, speed",
+      "count": 6,
+      "questions": [
+        { "q": "Red and blue marbles are in the ratio 3 : 5. There are 32 marbles. How many are red?", "a": 12, "explain": "8 parts make 32, so 1 part is 4 and red is 3 parts = 12." },
+        { "q": "What is 40% of 85?", "a": 34, "explain": "10% of 85 is 8.5, so 40% is 34." },
+        { "q": "18 is 30% of a number. What is the number?", "a": 60, "explain": "10% is 6, so 100% is 60." },
+        { "q": "A car goes 150 miles in 2½ hours at a steady speed. How many hours for 270 miles?", "a": 4.5, "explain": "Speed is 60 miles per hour. 270 ÷ 60 = 4.5." },
+        { "q": "Ali and Ben have stickers in the ratio 3 : 2. Ali gives 12 stickers to Ben and now they have the same number. How many stickers do they have altogether?", "a": 120, "explain": "Ali has 1 part more than Ben. Moving 12 stickers closes a gap of 24, so 1 part = 24. 5 parts = 120." },
+        { "q": "A $40 jacket is 25% off. What is the sale price in dollars?", "a": 30, "explain": "25% of 40 is 10, so the price is 40 − 10 = 30." }
+      ]
+    },
+    {
+      "id": "as-numtheory",
+      "name": "D. Number theory",
+      "description": "Primes, factors, remainders",
+      "count": 6,
+      "questions": [
+        { "q": "What is the largest prime factor of 84?", "a": 7, "explain": "84 = 2 × 2 × 3 × 7." },
+        { "q": "What is the greatest common factor of 36 and 48?", "a": 12, "explain": "36 = 12 × 3 and 48 = 12 × 4." },
+        { "q": "What is the least common multiple of 12 and 18?", "a": 36, "explain": "Multiples of 18: 18, 36. 36 is also a multiple of 12." },
+        { "q": "What is the remainder when 2,457 is divided by 6?", "a": 3, "explain": "2,457 = 6 × 409 + 3." },
+        { "q": "How many different factors does 36 have?", "a": 9, "explain": "1, 2, 3, 4, 6, 9, 12, 18 and 36." },
+        { "q": "How many whole numbers less than 50 leave remainder 2 when divided by 5 and remainder 1 when divided by 3?", "a": 3, "explain": "They are 7, 22 and 37. The pattern repeats every 15." }
+      ]
+    },
+    {
+      "id": "as-geometry",
+      "name": "E. Geometry",
+      "description": "Angles, area, volume",
+      "count": 6,
+      "questions": [
+        { "q": "A triangle has one angle of 40°. The other two angles are equal. How big is each of them, in degrees?", "a": 70, "explain": "180 − 40 = 140, and 140 ÷ 2 = 70." },
+        { "q": "Two angles sit side by side on a straight line. One is 3 times as big as the other. How big is the smaller one, in degrees?", "a": 45, "explain": "4 parts make 180°, so 1 part is 45°." },
+        { "q": "A rectangle is 8 cm by 6 cm. A triangle has the same area and a base of 12 cm. How tall is the triangle, in cm?", "a": 8, "explain": "Area is 48. Triangle: 12 × h ÷ 2 = 48, so h = 8." },
+        { "q": "A tank has a floor 20 cm long and 15 cm wide. It holds 4.5 liters of water. How deep is the water, in cm? (1 liter = 1,000 cubic cm)", "a": 15, "explain": "4.5 liters = 4,500 cubic cm. 4,500 ÷ 300 = 15." },
+        { "q": "A triangle has a base of 10 and a height of 7. What is its area?", "a": 35, "explain": "10 × 7 ÷ 2 = 35." },
+        { "q": "A trapezoid has parallel sides of 6 and 10, and a height of 4. What is its area?", "a": 32, "explain": "(6 + 10) × 4 ÷ 2 = 32." }
+      ]
+    },
+    {
+      "id": "as-problems",
+      "name": "F. Problem solving",
+      "description": "Puzzles and patterns",
+      "count": 6,
+      "questions": [
+        { "q": "How many rectangles of any size can you find in a grid of squares with 3 rows and 4 columns? (A square counts.)", "a": 60, "explain": "Pick 2 of the 5 vertical lines (10 ways) and 2 of the 4 horizontal lines (6 ways): 10 × 6 = 60." },
+        { "q": "A two-digit number has digits that add to 11. Reversing the digits makes the number 27 bigger. What is the original number?", "a": 47, "explain": "47 reversed is 74, and 74 − 47 = 27." },
+        { "q": "What comes next?\n4, 7, 12, 19, 28, ?", "a": 39, "explain": "The jumps are 3, 5, 7, 9, so the next jump is 11." },
+        { "q": "What is the 10th number in this list?\n4, 7, 12, 19, 28, ...", "a": 103, "explain": "Each number is its position squared, plus 3. 10 × 10 + 3 = 103." },
+        { "q": "Ana, Ben, Cy and Dee race. Cy beats Ana. Ana beats Ben. Dee is not first or last, and Dee finishes right after Ana. What place does Dee finish in? (1 means first)", "a": 3, "explain": "The order is Cy, Ana, Dee, Ben. Dee is third." },
+        { "q": "A farm has only chickens and rabbits. Together they have 20 heads and 56 legs. How many rabbits are there?", "a": 8, "explain": "If all 20 were chickens there would be 40 legs. The extra 16 legs come 2 at a time from rabbits, so 8 rabbits." }
+      ]
+    }
+  ]
+}
