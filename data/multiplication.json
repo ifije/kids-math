@@ -1,0 +1,56 @@
+{
+  "subject": "Multiplication",
+  "icon": "×",
+  "color": "orange",
+  "levels": [
+    {
+      "id": "m-2-5-10",
+      "name": "2s, 5s and 10s",
+      "description": "Warm-up tables",
+      "count": 20,
+      "generator": { "type": "multiplication", "tables": [2, 5, 10], "multipliers": [1, 12] }
+    },
+    {
+      "id": "m-3-4-6",
+      "name": "3s, 4s and 6s",
+      "description": "Building up",
+      "count": 20,
+      "generator": { "type": "multiplication", "tables": [3, 4, 6], "multipliers": [1, 12] }
+    },
+    {
+      "id": "m-7-8-9",
+      "name": "7s, 8s and 9s",
+      "description": "The tricky ones",
+      "count": 20,
+      "generator": { "type": "multiplication", "tables": [7, 8, 9], "multipliers": [1, 12] }
+    },
+    {
+      "id": "m-11-12",
+      "name": "11s and 12s",
+      "description": "Big tables",
+      "count": 20,
+      "generator": { "type": "multiplication", "tables": [11, 12], "multipliers": [1, 12] }
+    },
+    {
+      "id": "m-all",
+      "name": "All tables 2 to 12",
+      "description": "Mixed. Asks the ones you miss more often.",
+      "count": 30,
+      "generator": { "type": "multiplication", "tables": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], "multipliers": [2, 12], "adaptive": true }
+    },
+    {
+      "id": "m-missing",
+      "name": "Missing number",
+      "description": "7 × ? = 56",
+      "count": 20,
+      "generator": { "type": "multiplication", "tables": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], "multipliers": [2, 12], "format": "missing-factor" }
+    },
+    {
+      "id": "m-sprint",
+      "name": "Speed sprint",
+      "description": "50 mixed questions. Beat your time.",
+      "count": 50,
+      "generator": { "type": "multiplication", "tables": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], "multipliers": [1, 12], "adaptive": true }
+    }
+  ]
+}

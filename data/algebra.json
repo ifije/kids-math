@@ -1,0 +1,118 @@
+{
+  "subject": "Algebra",
+  "icon": "x",
+  "color": "blue",
+  "levels": [
+    {
+      "id": "a-evaluate",
+      "name": "Evaluate expressions",
+      "description": "Find 3x − 4 when x = 5",
+      "count": 10,
+      "generator": { "type": "evaluate", "coefficient": [-6, 9], "constant": [-12, 12], "value": [-6, 9] }
+    },
+    {
+      "id": "a-one-step",
+      "name": "One-step equations",
+      "description": "x + 7 = 12,  4x = 28",
+      "count": 10,
+      "generator": { "type": "one-step", "range": [1, 12], "negatives": false }
+    },
+    {
+      "id": "a-one-step-neg",
+      "name": "One-step with negatives",
+      "description": "x − 5 = −9,  −3x = 21",
+      "count": 10,
+      "generator": { "type": "one-step", "range": [1, 12], "negatives": true }
+    },
+    {
+      "id": "a-two-step",
+      "name": "Two-step equations",
+      "description": "3x + 4 = 19",
+      "count": 10,
+      "generator": { "type": "two-step", "coefficient": [2, 9], "constant": [1, 15], "solution": [-9, 12] }
+    },
+    {
+      "id": "a-distributive",
+      "name": "Distributive property",
+      "description": "2(x + 3) = 14",
+      "count": 10,
+      "generator": { "type": "distributive", "coefficient": [2, 6], "constant": [-8, 8], "solution": [-8, 10] }
+    },
+    {
+      "id": "a-both-sides",
+      "name": "Variables on both sides",
+      "description": "5x + 2 = 2x + 14",
+      "count": 10,
+      "generator": { "type": "both-sides", "coefficient": [2, 9], "constant": [-12, 12], "solution": [-8, 10] }
+    },
+    {
+      "id": "a-mixed",
+      "name": "Mixed review",
+      "description": "A bit of everything",
+      "count": 15,
+      "generator": {
+        "type": "mix",
+        "generators": [
+          { "type": "one-step", "range": [1, 12], "negatives": true },
+          { "type": "two-step", "coefficient": [2, 9], "constant": [1, 15], "solution": [-9, 12] },
+          { "type": "distributive", "coefficient": [2, 6], "constant": [-8, 8], "solution": [-8, 10] },
+          { "type": "both-sides", "coefficient": [2, 9], "constant": [-12, 12], "solution": [-8, 10] }
+        ]
+      }
+    },
+    {
+      "id": "a-word",
+      "name": "Word problems",
+      "description": "Hand-written. Edit data/algebra.json to add more.",
+      "count": 6,
+      "questions": [
+        {
+          "q": "A number plus 9 is 23. What is the number?",
+          "a": 14,
+          "hint": "Write it as x + 9 = 23."
+        },
+        {
+          "q": "Three times a number is 51. What is the number?",
+          "a": 17,
+          "hint": "3x = 51"
+        },
+        {
+          "q": "Maya has twice as many stickers as Leo. Together they have 36. How many does Leo have?",
+          "a": 12,
+          "hint": "Let Leo have x. Then Maya has 2x, and x + 2x = 36.",
+          "explain": "3x = 36, so x = 12."
+        },
+        {
+          "q": "A taxi charges $3 plus $2 per mile. A ride cost $19. How many miles was it?",
+          "a": 8,
+          "hint": "2m + 3 = 19",
+          "explain": "2m = 16, so m = 8."
+        },
+        {
+          "q": "The perimeter of a rectangle is 30. Its length is 9. What is its width?",
+          "a": 6,
+          "hint": "Perimeter = 2(length + width).",
+          "explain": "2(9 + w) = 30, so 9 + w = 15, so w = 6."
+        },
+        {
+          "q": "Five less than four times a number is 27. What is the number?",
+          "a": 8,
+          "hint": "4x − 5 = 27",
+          "explain": "4x = 32, so x = 8."
+        },
+        {
+          "q": "Sam is 4 years older than Ana. The sum of their ages is 30. How old is Ana?",
+          "a": 13,
+          "hint": "Let Ana be x. Then Sam is x + 4.",
+          "explain": "x + (x + 4) = 30, so 2x = 26, so x = 13."
+        },
+        {
+          "q": "Half of a number, plus 7, equals 15. What is the number?",
+          "a": 16,
+          "hint": "x/2 + 7 = 15",
+          "explain": "x/2 = 8, so x = 16."
+        }
+      ]
+    }
+  ]
+}
